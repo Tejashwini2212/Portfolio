@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3db1ec219b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+         <span style="font-size: 50px; font-weight: bold; color: white;">Tejashwini</span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text"></div>
+      <p>Aspiring Software Developer</p>
+      <h1>Hi, I'm <span style="color: #ff004f;">Tejashwini</span><br> From Karnataka</h1>
+    </div>
+</div>
+<!-- ---------------------------------------about-----------------------> 
+<div id="about"></div>
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="user.png">
+        </div>
+        <div class="about-col-2">
+            <h1 class="subtitle">About me</h1>
+            <p>"I'm Tejashwini yallaraddi, a recent CSE graduate passionate about 
+               harnessing technology's potential to drive innovation and solve complex
+               challenges. Armed with a strong foundation in programming languages like
+               Java and Basics of python, as well as web development and android app development. 
+               I've honed my problem-solving skills through hands-on projects and internship.
+               I'm on a mission to pursue a career in software development and aiming to contribute
+               my expertise to projects that shape the future of technology. With a knack for teamwork 
+               and a drive for continuous learning, I'm excited to embark on this journey of making a meaningful
+               impact in the world of engineering."</p>
+
+               <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Development</span></br>Developing Web Applications</li>
+                    <li><span>App Development</span></br>Developing Android App</li>
+                    <li><span>Java</span></br>For building applications on any platform</li>
+                </ul>
+               </div></br></br>
+               <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li><span>2023</span></br>Full Stack Web Development Training at Ethnus Institute, Banglore</li>
+                    <li><span>2019-2023</span></br>B.E(CSE) From Basaveshwar engineering College, Bagalkot</li>
+                    <li><span>2017-2019</span></br>PUC From Aryabhatta PU Science college, Dharwad </li>
+                    <li><span>2017</span></br>10th From Adarsha Vidyalaya (R.M.S.A), Mudhol </li>
+                </ul>
+               </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------------------projects-------------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Text Summarization using Deep Learning</h2>
+                <p> Develop a deep learning-based text summarization model  
+                    that can generate concise summaries from large bodies of text.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Tourist Guide Web Application </h2>
+                <p>  Design and develop a web application for providing tourist    
+                    Guide services.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Smart Shopping App </h2>
+                <p>  Develop a mobile app that enhances the shopping    
+                    Experience with personalized recommendations,  
+                    multiple secure payments and convenient delivery.</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------------------------contact-------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tejuraddy2001@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9972932492</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/tejashwini-reddy-b73b62237/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com/tejashwini_raddi?igshid=MWZjMTM2ODFkZg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Tejashwini2212"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="Tejashwini_Yallaraddi_Resume_ (1).pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="Message" rows="10" placeholder="Write your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Tejashwini.</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }; 
+</script>
+    
+</body>
+</html>
